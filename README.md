@@ -1,8 +1,6 @@
 # nx2_simple_counter
 Nx2. Simple counter
 
-Counter counter.
-
 Params:
 count - value of counter
 min - min value
