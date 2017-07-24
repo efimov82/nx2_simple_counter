@@ -9,10 +9,10 @@
 
 <my-counter #counter1 [count]="counter1_val" [min]=-5 [max]=5></my-counter>
 
-<my-counter #counter2 [count]=([counter2_val]) min=0 default=4 max=20 step=2></my-counter>
+<my-counter #counter2 [count]="counter2_val" min=0 default=4 max=20 step=2></my-counter>
 
 
-<div>Show values at some other place:
+<div>Show counters values at some other place:
   counter1: {{counter1.count}}
   counter2: {{counter2.count}}
   </div>
