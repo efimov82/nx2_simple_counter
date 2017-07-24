@@ -1,9 +1,9 @@
 # CounterNx2
 
-Usage component:
+Usage component: <br/>
 <code>
- <my-counter #counter1 [count]="counter1" [min]=-15 [max]=15 [step]=2></my-counter>
- 
+ <my-counter #counter1 [count]="var" [min]=-15 [max]=15 [step]=2></my-counter>
+ <br/>
  <my-counter #counter2 [count]="counter2" [min]=0 [max]=100 [step]=5></my-counter>
 </code>
 Params:
