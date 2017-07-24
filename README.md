@@ -1,12 +1,11 @@
 # CounterNx2
 
-Usage component: <br/>
+<p>Usage component:</p>
 <code>
  <my-counter #counter1 [count]="var" [min]=-15 [max]=15 [step]=2></my-counter>
- <br/>
- <my-counter #counter2 [count]="counter2" [min]=0 [max]=100 [step]=5></my-counter>
 </code>
-Params:
+
+<p>Params:</p>
 
 * count - value of counter
 * min - min value
