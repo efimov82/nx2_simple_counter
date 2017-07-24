@@ -14,7 +14,7 @@
 * default - init/reset value
   
  Methods:
- * reset() - set 'count' to 'default' value
+ * resetVal() - set 'count' to 'default' value
   
 
 ## Development server
