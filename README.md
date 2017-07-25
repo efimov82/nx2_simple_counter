@@ -12,12 +12,12 @@
  <my-counter #counter1 [count]="counter_val" [min]=-5 [max]=5 (changeValue)="handlerChange($event)"></my-counter>
 ```
 
-3. With use Store
+3. With Store
 ```
 <my-counter [store_name]="counter1" [store_action]="NEW_VALUE"  [min]=-5 [max]=5></my-counter>
 ```
 
-Coz in your store need add varible name = "counter". For example below your store look like this:
+In your store need add varible name = [store_name]. For example below your store look like this:
 export interface AppStore {
   counter1: number;
 }
