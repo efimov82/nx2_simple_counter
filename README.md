@@ -3,7 +3,7 @@
 <p>Usage component:</p>
 
 1. Simple: 
-<my-counter></<my-counter>
+<pre><my-counter></<my-counter></pre>
 
 2. With Outer change function
  <my-counter #counter1 [count]="counter_val" [min]=-5 [max]=5 (changeValue)="handlerChange($event)"></my-counter>
