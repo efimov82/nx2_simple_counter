@@ -2,10 +2,34 @@
 
 <p>Usage component:</p>
 
- <my-counter #counter1 [count]="var" [min]=-15 [max]=15 [step]=2></my-counter>
+1. Simple: 
+<my-counter></<my-counter>
+
+2. With Outer change function
+ <my-counter #counter1 [count]="counter_val" [min]=-5 [max]=5 (changeValue)="handlerChange($event)"></my-counter>
+
+3. With use Store
+<my-counter [store_name]="counter1" [store_action]="NEW_VALUE"  [min]=-5 [max]=5></my-counter>
+
+Coz in your store need add varible name = "counter". For example below your store look like this:
+export interface AppStore {
+  counter1: number;
+}
+
+and add Reducer with type action = 'NEW_VALUE' like this:
+
+export function counterReducer(state: any = [], action: Action) {
+  switch (action.type) {
+    case NEW_VALUE:
+      return action.payload;
+
+    default:
+      return state;
+  }
+}
 
 
-<p>Params:</p>
+<p>Input params:</p>
 
 * count - value of counter
 * min - min value
