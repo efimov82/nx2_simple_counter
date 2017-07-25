@@ -17,10 +17,12 @@
 <my-counter [store_name]="counter1" [store_action]="NEW_VALUE"  [min]=-5 [max]=5></my-counter>
 ```
 
-In your store need add varible name = [store_name]. For example below your store look like this:
+In your store need add varible name = [store_name]. For example your store look like this:
+```
 export interface AppStore {
   counter1: number;
 }
+```
 
 and add Reducer with type action = 'NEW_VALUE' like this:
 ```
