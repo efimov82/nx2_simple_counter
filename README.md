@@ -7,7 +7,7 @@
 <my-counter></<my-counter>
 ```
 
-2. With Outer change function
+2. With Output change function
 ```
  <my-counter #counter1 [count]="counter_val" [min]=-5 [max]=5 (changeValue)="handlerChange($event)"></my-counter>
 ```
@@ -45,7 +45,7 @@ export function counterReducer(state: any = [], action: Action) {
   
  Methods:
  * resetVal() - set 'count' to 'default' value
-  
+ * changeValue - handler for change value of counter
 
 ## Development server
 
