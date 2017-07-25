@@ -8,10 +8,14 @@
 ```
 
 2. With Outer change function
+```
  <my-counter #counter1 [count]="counter_val" [min]=-5 [max]=5 (changeValue)="handlerChange($event)"></my-counter>
+```
 
 3. With use Store
+```
 <my-counter [store_name]="counter1" [store_action]="NEW_VALUE"  [min]=-5 [max]=5></my-counter>
+```
 
 Coz in your store need add varible name = "counter". For example below your store look like this:
 export interface AppStore {
@@ -19,7 +23,7 @@ export interface AppStore {
 }
 
 and add Reducer with type action = 'NEW_VALUE' like this:
-
+```
 export function counterReducer(state: any = [], action: Action) {
   switch (action.type) {
     case NEW_VALUE:
@@ -29,7 +33,7 @@ export function counterReducer(state: any = [], action: Action) {
       return state;
   }
 }
-
+```
 
 <p>Input params:</p>
 
